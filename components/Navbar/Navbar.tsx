@@ -83,7 +83,7 @@ function page() {
                 Company
               </Link>
               <div className="mt-4 space-y-2">
-                <button className="block w-full rounded-full bg-blue-900 px-4 py-2 font-medium text-white">
+                <button className="block w-full rounded-full bg-green-900 px-4 py-2 font-medium text-white">
                   Get Started
                 </button>
               </div>
