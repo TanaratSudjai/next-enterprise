@@ -1,5 +1,6 @@
 import React from 'react';
-import ButtonGetStarted from "../../components/Section/childSection/ButtonGetStarted/ButtonGetStarted"
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface FooterLinkProps {
   href: string;
@@ -7,12 +8,12 @@ interface FooterLinkProps {
 }
 
 const FooterLink: React.FC<FooterLinkProps> = ({ href, children }) => (
-  <a 
+  <Link 
     href={href} 
     className="text-gray-600 hover:text-gray-800 transition-colors duration-200"
   >
     {children}
-  </a>
+  </Link>
 );
 
 interface FooterColumnProps {
@@ -92,13 +93,15 @@ const Footer: React.FC<FooterProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
        
         <div className="mb-10">
-          <a href="/" className="flex items-center">
-            <img 
+          <Link href="/" className="flex items-center">
+            <Image 
               src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cd45cce4719_Support%20Ninja%20%7C%20Full%20Logo.svg" 
               alt={`${companyName} logo`} 
+              width={200}
+              height={32}
               className="h-8 w-auto" 
             />
-          </a>
+          </Link>
         </div>
 
        
@@ -119,13 +122,13 @@ const Footer: React.FC<FooterProps> = ({
           </div>
           <div className="flex space-x-6">
             {legal.map((item) => (
-              <a 
+              <Link 
                 key={item.name}
                 href={item.href}
                 className="text-gray-600 hover:text-gray-800 text-sm transition-colors duration-200"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

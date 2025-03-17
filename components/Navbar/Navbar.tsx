@@ -10,7 +10,7 @@ function page() {
         <div className="container mx-auto px-4">
           <div className="flex h-20 items-center justify-between">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-bold text-black">
+              <Link href="/" className="text-2xl font-bold text-gray-800">
                 SupportNinja
               </Link>
             </div>
