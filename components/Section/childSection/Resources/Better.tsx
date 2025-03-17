@@ -5,7 +5,7 @@ import ButtonGetStarted from "../ButtonGetStarted/ButtonGetStarted"
 function Better() {
   return (
     <div className="">
-      <img
+      <Image
         className="w-full"
         src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c211cce4793_Section%20Curve%2003.svg"
         alt=""
@@ -26,14 +26,13 @@ function Better() {
             </div>
 
             <div className="w-full md:w-2/2">
-              <img
+              <Image
                 src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cc4e1ce4794_Character%20Illustration__Footer-CTA.webp"
                 loading="lazy"
                 sizes="100vw"
-                srcSet="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cc4e1ce4794_Character%2520Illustration__Footer-CTA-p-500.webp 500w, https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cc4e1ce4794_Character%2520Illustration__Footer-CTA-p-800.webp 800w, https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cc4e1ce4794_Character%2520Illustration__Footer-CTA-p-1080.webp 1080w, https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cc4e1ce4794_Character%20Illustration__Footer-CTA.webp 1638w"
                 alt="An illustration of A woman holding a clipboard, a woman planting, and a man holding a cup and and phone"
                 className="full-width-image"
-              ></img>
+              ></Image>
             </div>
           </section>
         </div>

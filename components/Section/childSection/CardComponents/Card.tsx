@@ -1,8 +1,8 @@
-"use client"
-import React from "react"
-import { useState } from "react"
-import { CheckSquare, Square } from "lucide-react"
-import "./hiddle.css"
+"use client";
+import { CheckSquare, Square } from "lucide-react"; // Third-party libraries
+import Image from "next/image"; // Next.js imports first
+import React, { useState } from "react"; // React next
+import "./hiddle.css"; // Local imports last
 interface Service {
   id: number
   title: string
@@ -73,7 +73,7 @@ function Card() {
               )}
             </div>
 
-            <img src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
+            <Image src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}
@@ -96,7 +96,7 @@ function Card() {
               )}
             </div>
 
-            <img src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
+            <Image src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}
@@ -119,7 +119,7 @@ function Card() {
               )}
             </div>
 
-            <img src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
+            <Image src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}

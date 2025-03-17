@@ -1,5 +1,5 @@
+import Image from "next/image"
 import React from "react"
-
 const PeopleSection: React.FC = () => {
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-16 md:flex-row">
@@ -19,7 +19,7 @@ const PeopleSection: React.FC = () => {
       </div>
       <div className="relative h-[500px] sm:w-1/2">
         <div className="absolute top-0 left-0 h-35 w-35 overflow-hidden rounded-2xl bg-[#b9bbb4] shadow-lg md:h-30 md:w-35 lg:w-45 lg:h-45">
-          <img
+          <Image
             src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c1677ce47c0_Tile__Man.webp"
             alt="Person smiling"
             className="h-full w-full object-cover"
@@ -27,7 +27,7 @@ const PeopleSection: React.FC = () => {
         </div>
 
         <div className="absolute top-0 left-[37%] flex h-35 w-35 items-center justify-center overflow-hidden rounded-2xl bg-orange-100 shadow-lg md:left-[32%] md:h-30 md:w-35 lg:left-[32%] lg:w-45 lg:h-45">
-          <img
+          <Image
             src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c32c6ce47ba_Tile%20Illustrations__Pie%20Chart.webp"
             alt="Pie chart"
             className="h-48 w-48 object-contain"
@@ -35,7 +35,7 @@ const PeopleSection: React.FC = () => {
         </div>
 
         <div className="absolute top-[-7%] right-0 left-[65%] h-35 w-35 overflow-hidden rounded-2xl bg-[#b9bbb4] shadow-lg shadow-[#b9bbb4] md:left-[60%] md:h-30 md:w-35 lg:left-[60%] lg:w-45 lg:h-45">
-          <img
+          <Image
             src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cf161ce47c1_Tile__Woman.webp"
             alt="Woman smiling"
             className="h-full w-full object-cover"
@@ -43,7 +43,7 @@ const PeopleSection: React.FC = () => {
         </div>
 
         <div className="absolute top-[38%] left-[0] flex h-35 w-35 items-center justify-center overflow-hidden rounded-2xl bg-orange-100 shadow-lg md:top-[40%] md:h-30 md:w-35 lg:top-[40%] lg:w-45 lg:h-45">
-          <img
+          <Image
             src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cbdf4ce47b9_Tile%20Illustrations__Laptop.webp"
             alt="Dashboard icon"
             className="h-48 w-48 object-contain"
@@ -51,7 +51,7 @@ const PeopleSection: React.FC = () => {
         </div>
 
         <div className="absolute top-[45%] left-[28%] h-35 w-35 overflow-hidden rounded-2xl bg-[#b9bbb4] shadow-lg md:h-30 md:w-35 lg:w-45 lg:h-45">
-          <img
+          <Image
             src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c141ace47c2_Tile__Man%202.webp"
             alt="Person thinking"
             className="h-full w-full object-cover"
@@ -59,7 +59,7 @@ const PeopleSection: React.FC = () => {
         </div>
 
         <div className="absolute top-[38%] right-0 left-[65%] flex h-35 w-35 items-center justify-center overflow-hidden rounded-2xl bg-orange-100 shadow-lg md:h-30 md:w-35 lg:w-45 lg:h-45">
-          <img
+          <Image
             src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cb7f6ce47b8_Tile%20Illustrations__Bar%20Chart.webp"
             alt="Bar chart"
             className="h-48 w-48 object-contain"

@@ -1,6 +1,7 @@
 "use client"
-import { useState, useEffect } from "react"
-import { ArrowDown, Menu, X, ChevronDown, ChevronUp, ArrowRight, ChevronRight, CheckSquare } from "lucide-react"
+import { ArrowRight, CheckSquare, ChevronDown, ChevronRight, Menu, X } from "lucide-react"
+import Image from "next/image";
+import React, { useEffect, useState } from "react"
 
 interface DropdownProps {
   items: string[]
@@ -19,7 +20,6 @@ interface MegaDropdownProps {
   items: NavItem[]
 }
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const MegaDropdown: React.FC<MegaDropdownProps> = ({ items }) => {
     return (
       <div className="absolute left-[-100] z-50 w-[740px] rounded-lg bg-white opacity-0 shadow-lg transition-opacity duration-700 group-hover:opacity-100">
@@ -66,7 +66,7 @@ function Navbar() {
                 {category.items && (
                   <div className="flex flex-col gap-3 pl-8">
                     {category.items.map((item, itemIndex) => (
-                      <a key={itemIndex} href="#" className="flex items-center text-gray-600 ">
+                      <a key={itemIndex} href="#" className="flex items-center text-gray-600">
                         {item.name} <ChevronRight className="ml-1 rotate-270" width={14} height={14} />
                       </a>
                     ))}
@@ -169,14 +169,16 @@ function Navbar() {
   return (
     <div>
       <nav
-        className={`fixed top-0 left-1/2 z-50 mt-15 flex w-full max-w-[1675px] -translate-x-1/2 items-center justify-between px-10 py-6 transition-all duration-300 ${scrolled ? "mt-[5]" : ""
-          }`}
+        className={`fixed top-0 left-1/2 z-50 mt-15 flex w-full max-w-[1675px] -translate-x-1/2 items-center justify-between px-10 py-6 transition-all duration-300 ${
+          scrolled ? "mt-[5]" : ""
+        }`}
       >
         <div
-          className={`flex gap-5 text-xl font-bold transition-opacity duration-300 ${scrolled ? "invisible opacity-0" : "opacity-100"
-            }`}
+          className={`flex gap-5 text-xl font-bold transition-opacity duration-300 ${
+            scrolled ? "invisible opacity-0" : "opacity-100"
+          }`}
         >
-          <img
+          <Image
             src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cd45cce4719_Support%20Ninja%20%7C%20Full%20Logo.svg"
             width="200"
             height="200"
@@ -187,15 +189,16 @@ function Navbar() {
 
         {/* Desktop Navigation Menu */}
         <ul
-          className={`hidden space-x-8 font-semibold text-black lg:flex ${scrolled ? "rounded-full bg-white px-8 py-4" : ""
-            }`}
+          className={`hidden space-x-8 font-semibold text-black lg:flex ${
+            scrolled ? "rounded-full bg-white px-8 py-4" : ""
+          }`}
         >
           <li
             className="group relative"
             onMouseEnter={() => handleDropdownToggle("solutions")}
             onMouseLeave={() => handleDropdownToggle("solutions")}
           >
-            <a href="#" className="flex items-center gap-1 ">
+            <a href="#" className="flex items-center gap-1">
               Solutions
               <ChevronDown width={12} height={12} />
             </a>
@@ -207,7 +210,7 @@ function Navbar() {
             onMouseEnter={() => handleDropdownToggle("industries")}
             onMouseLeave={() => handleDropdownToggle("industries")}
           >
-            <a href="#" className="flex items-center gap-1 ">
+            <a href="#" className="flex items-center gap-1">
               Industries
               <ChevronDown width={12} height={12} />
             </a>
@@ -229,7 +232,7 @@ function Navbar() {
             onMouseEnter={() => handleDropdownToggle("about")}
             onMouseLeave={() => handleDropdownToggle("about")}
           >
-            <a href="#" className="flex items-center gap-1 ">
+            <a href="#" className="flex items-center gap-1">
               About <ChevronDown width={12} height={12} />
             </a>
             {openDropdown === "about" && <DropAboutdown items={["About us", "Careers"]} />}
