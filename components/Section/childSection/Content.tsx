@@ -1,8 +1,13 @@
-import { FC } from 'react';
-import Rescoures from './Resources/Rescoures';
-import Alone from './Resources/Alone';
-import Service from './Resources/Service';
-import CardResoult from './Resources/CardResoult';
+import React from 'react'
+import Alone from './Resources/Alone'
+import Better from './Resources/Better'
+import CardResoult from './Resources/CardResoult'
+import CareerPage from './Resources/CareerPage'
+import CustomizedApproach from './Resources/CustomizedApproach'
+import Passionate from './Resources/Passionate'
+import Rescoures from './Resources/Rescoures'
+import Service from './Resources/Service'
+import Spanning from './Resources/Spanning'
 
 function Content() {
   return (
@@ -11,6 +16,11 @@ function Content() {
       <Alone />
       <Service />
       <CardResoult />
+      <Spanning />
+      <CustomizedApproach />
+      <Passionate />
+      <CareerPage />
+      <Better />
     </div>
   )
 }

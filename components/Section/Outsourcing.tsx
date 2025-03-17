@@ -1,7 +1,7 @@
 import React from "react"
-import Content from "./childSection/Content"
-import Card from "./childSection/CardComponents/Card"
 import ButtonGetStarted from "./childSection/ButtonGetStarted/ButtonGetStarted"
+import Card from "./childSection/CardComponents/Card"
+import Content from "./childSection/Content"
 import Support from "./childSection/SupportBG/Support"
 function Outsourcing() {
   return (
