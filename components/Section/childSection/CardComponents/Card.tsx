@@ -73,7 +73,13 @@ function Card() {
               )}
             </div>
 
-            <Image src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
+            <Image
+              src={service.image}
+              alt={service.title}
+              className="mb-4 h-28 w-full object-contain"
+              width={100}
+              height={100}
+            />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}
@@ -96,7 +102,13 @@ function Card() {
               )}
             </div>
 
-            <Image src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
+            <Image
+              src={service.image}
+              alt={service.title}
+              className="mb-4 h-28 w-full object-contain"
+              width={100}
+              height={100}
+            />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}
@@ -119,7 +131,13 @@ function Card() {
               )}
             </div>
 
-            <Image src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
+            <Image
+              src={service.image}
+              alt={service.title}
+              width={100}
+              height={100}
+              className="mb-4 h-28 w-full object-contain"
+            />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}

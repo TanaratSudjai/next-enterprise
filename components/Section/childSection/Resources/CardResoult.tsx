@@ -63,15 +63,14 @@ function CardResoult() {
           <div className="relative flex flex-col items-center justify-center rounded-4xl bg-[url('/bg/bg.svg')] bg-cover bg-center p-8 md:p-12">
             <blockquote className="relative z-10 w-[60%]">
               <p className="mb-8 text-center text-xl text-gray-800 italic md:text-2xl">"{currentTestimonial.quote}"</p>
-
               <footer className="text-center">
                 <div className="font-bold text-gray-900">{currentTestimonial.author}</div>
                 <div className="text-gray-600">{currentTestimonial.title}</div>
               </footer>
             </blockquote>
 
-            <div className="mt-12 flex w-full items-center justify-between gap-[50%]">
-              <div className="flex space-x-2 font-bold text-gray-800">
+            <div className="mt-12 flex w-full items-center justify-center md:justify-between lg:justify-between gap-[50%]">
+              <div className="hidden space-x-2 font-bold text-gray-800 md:flex lg:flex">
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
@@ -82,8 +81,7 @@ function CardResoult() {
                 ))}
               </div>
 
-              <div className="flex">
-                <hr />
+              <div className="jus flex">
                 <button
                   onClick={handlePrevious}
                   className="rounded-l-full bg-[#0c3a23] p-2 text-white hover:bg-green-800 focus:outline-none"

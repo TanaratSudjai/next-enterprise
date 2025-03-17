@@ -24,25 +24,25 @@ export default function CustomApproach() {
     <div className="w-full bg-[#bfc1b9]">
       <div className="container mx-auto max-w-7xl">
         <hr />
-        <div className="flex flex-col gap-10 p-10 md:flex-row">
-          <div className="md:w-1/2">
-            <h2 className="font-serif text-6xl">
-              Our customized <br /> approach
-            </h2>
-            <p className="mt-4 max-w-md text-gray-700">
-              We tailor our strategies and services based on your roadblocks and needs, delivering a strategic
-              outsourcing playbook — inclusive of technology, talent, and timing — that drives your business forward.
-            </p>
+        <div className="flex flex-col gap-10 p-10 md:flex-col lg:flex-row">
+          <div className="w-2/2">
+            <div className="mx-7">
+              <h2 className="text-left font-serif text-4xl md:text-5xl lg:text-6xl">Our customized approach</h2>
+              <p className="mt-4 max-w-md text-gray-700 md:max-w-xl">
+                We tailor our strategies and services based on your roadblocks and needs, delivering a strategic
+                outsourcing playbook — inclusive of technology, talent, and timing — that drives your business forward.
+              </p>
+            </div>
           </div>
 
-          <div className="md:w-1/2">
+          <div className="w-2/2">
             <h3 className="mb-4 text-lg font-semibold">Get set up in 5 easy steps</h3>
 
-            <div className="mb-6 flex space-x-5">
+            <div className="mx-7 mb-6 flex justify-center space-x-2">
               {Object.keys(steps).map((tab) => (
                 <button
                   key={tab}
-                  className={`cursor-pointer rounded-full px-4 py-2 text-lg ${
+                  className={`md:text-md flex w-[50%] cursor-pointer justify-center rounded-full px-4 py-2 text-[13px] font-bold lg:text-lg ${
                     selectedTab === tab ? "bg-white text-black" : "bg-white/30 text-black"
                   }`}
                   onClick={() => setSelectedTab(tab as keyof typeof steps)}
@@ -52,18 +52,22 @@ export default function CustomApproach() {
               ))}
             </div>
 
-            <div className="space-y-4">
+            <div className="flex flex-col justify-center space-y-4">
               {steps[selectedTab].map((step, index) => (
-                <div key={index} className="flex max-w-xl items-start space-x-6">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full border bg-white font-bold text-gray-800">
-                    {index + 1}
+                <div key={index} className="flex max-w-xl items-start space-x-5 md:mx-8">
+                  <div className="">
+                    <div className="flex h-7 w-7 items-center justify-center rounded-full border bg-white font-bold text-gray-800">
+                      {index + 1}
+                    </div>
                   </div>
-                  <p className="font-sans text-black">{step}</p>
+                  <div className="flex justify-start">
+                    <p className="font-sans text-[11px] text-black md:text-[15px] lg:text-lg">{step}</p>
+                  </div>
                 </div>
               ))}
             </div>
 
-            <button className="mt-15 w-[100%] rounded-full border-2 border-[#0c3a23] bg-[#0c3a23] px-4 py-2 font-medium text-white transition-all duration-300 hover:cursor-pointer hover:bg-transparent hover:text--[#0c3a23]">
+            <button className="hover:text--[#0c3a23] mt-15 w-[100%] rounded-full border-2 border-[#0c3a23] bg-[#0c3a23] px-4 py-2 font-medium text-white transition-all duration-300 hover:cursor-pointer hover:bg-transparent">
               View details
             </button>
           </div>

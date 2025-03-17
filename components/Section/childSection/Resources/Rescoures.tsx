@@ -2,7 +2,7 @@ import Image from "next/image"
 
 function Resources() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto mt-[-400px] px-4 py-8 md:mt-[0px] lg:mt-[0px]">
       <div className="flex w-full flex-col items-center justify-between gap-10 px-4 py-12 md:w-auto md:flex-col lg:flex-row">
         <div className="flex w-full justify-center md:w-2/2">
           <Image
@@ -14,23 +14,23 @@ function Resources() {
           />
         </div>
         <div className="flex w-full flex-col justify-center space-y-4 md:w-2/2">
-          <b className="font-serif text-4xl leading-tight">
+          <p className="font-serif text-3xl leading-tight md:text-left md:text-4xl lg:text-left lg:text-4xl">
             Free up resources, accelerate growth, and solve for scale.
-          </b>
+          </p>
           <p className="text-base md:text-lg">
             At SupportNinja, we combine cutting-edge technology with value-centricity to foster high-performing,
             reliable teams that turn growing pains into efficient pathways to profitability.
           </p>
-          <p className="mt-10 text-base md:text-lg">
+          <p className="mt-3 text-base md:mt-10 md:text-lg lg:mt-10">
             Our customized, agile, AI-enabled solutions don’t just deliver cost savings — they also help you achieve key
             business outcomes.
           </p>
-          <p className="mt-10 text-base md:text-lg">
+          <p className="mt-3 text-base md:mt-10 md:text-lg lg:mt-10">
             We work closely with you to continually adjust strategies, realize efficiencies, and drive scale according
             to your unique needs. Plus, flexibility is baked in from day one, so you’re never locked into rigid,
             long-term contracts.
           </p>
-          <p className="mt-10 text-base md:text-lg">Now that’s outsourcing worth talking about.</p>
+          <p className="mt-3 text-base md:mt-10 md:text-lg lg:mt-10">Now that’s outsourcing worth talking about.</p>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import Support from "./childSection/SupportBG/Support"
 function Outsourcing() {
   return (
     <div className="">
-      <section className="w-full bg-[url('/bg/wave-haikei.svg')] bg-cover bg-center pt-32 pb-[300px] text-center">
+      <section className="w-full bg-[url('/bg/wave-haikei-moblies.svg')] bg-cover bg-center pt-32 pb-[450px] text-center md:bg-[url('/bg/wave-haikei.svg')] md:pb-[350px] lg:pb-[350px]">
         <div className="container mx-auto px-4">
           <div className="mx-auto">
             <p className="mb-12 w-full text-2xl font-light text-gray-800">

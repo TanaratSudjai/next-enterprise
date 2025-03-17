@@ -65,23 +65,25 @@ function Spanning() {
   return (
     <div className="relative flex w-full justify-center bg-[url('/bg/wave-haikei-2.svg')] bg-cover bg-top pb-[100px] text-center">
       <div className="container mx-auto flex max-w-7xl justify-center">
-        <div className="flex max-w-lg flex-col justify-center pt-[350px]">
-          <h2 className="mb-12 font-serif text-6xl text-gray-800">
+        <div className="flex max-w-lg flex-col justify-center px-10 pt-[350px] md:px-0 lg:px-0">
+          <h2 className="mb-12 font-serif text-4xl text-gray-800 md:text-5xl lg:text-6xl">
             Spanning a wider <br />
             world of talent
           </h2>
-          <p className="mb-10 text-left text-xl">
+          <p className="md:text-md mb-7 text-left text-sm lg:text-lg">
             What are the odds that the most qualified people in the world live in your zip code? We’ll help you see
             further.
           </p>
-          <p className="mb-10 text-left text-xl">
+          <p className="md:text-md mb-7 text-left text-sm lg:text-lg">
             A global team extends your presence across time zones and languages—which means longer reach, constant
             uptime, and happier customers.
           </p>
-          <p className="mb-10 text-left text-xl font-bold">It’s time to go international. No passport required.</p>
+          <p className="md:text-md mb-7 text-left text-[12px] font-bold lg:text-lg">
+            It’s time to go international. No passport required.
+          </p>
 
           <div className="flex w-full justify-center">
-            <div className="w-[25%]">
+            <div className="w-auto">
               <ButtonGetStartedGreen />
             </div>
           </div>

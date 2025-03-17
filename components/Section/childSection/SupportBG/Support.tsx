@@ -5,13 +5,13 @@ function Support() {
   return (
     <div className="container mx-8 mt-[100px] flex max-w-7xl flex-col items-center justify-between gap-10 rounded-2xl bg-[#bfc1b9] px-4 py-6 sm:flex-col md:flex-col lg:flex-row">
       <div className="flex items-center justify-center p-4 lg:w-1/2">
-        <h2 className="text-center font-serif text-xl text-gray-800 md:text-center lg:text-left">
+        <h2 className="text-center font-serif text-sm text-gray-800 md:text-center lg:text-left">
           <b>
             Driving better business results <br /> for 200+ companies.
           </b>
         </h2>
       </div>
-      <div className="lg:w-1.5/2 flex flex-wrap items-center justify-center gap-6 px-2 sm:w-full md:w-2/2">
+      <div className="flex items-center justify-center gap-6 px-2 py-2 sm:w-full md:flex">
         <Image
           src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c0380ce484b_B%26MG_foundation.svg"
           alt="Company Logo"
