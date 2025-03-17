@@ -1,8 +1,8 @@
-"use client";
-import { CheckSquare, Square } from "lucide-react"; // Third-party libraries
-import Image from "next/image"; // Next.js imports first
-import React, { useState } from "react"; // React next
-import "./hiddle.css"; // Local imports last
+"use client"
+import { CheckSquare, Square } from "lucide-react"
+import Image from "next/image"
+import React, { useState } from "react"
+import "./hiddle.css"
 interface Service {
   id: number
   title: string
