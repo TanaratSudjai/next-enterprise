@@ -1,8 +1,6 @@
-import React from "react"
-import { useState } from "react"
-import Image from "next/image"
+import Link from 'next/link';
+import { useState } from 'react';
 
-import Link from "next/link"
 function page() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 

@@ -1,12 +1,15 @@
-import React from "react"
+import Image from 'next/image';
+import { FC } from 'react';
 
 function Resources() {
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-16 px-4 py-12 md:flex-row">
       <div className="flex w-full justify-center md:w-1/2">
-        <img
+        <Image
           src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c5b45ce4789_Character%20Illustration__Woman%20Watering%20Bar%20Chart.webp"
           alt="Woman watering bar chart illustration"
+          width={500}
+          height={500}
           className="h-auto w-full object-contain"
         />
       </div>

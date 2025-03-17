@@ -1,5 +1,6 @@
 "use client"
-import { useState } from "react"
+import Image from 'next/image';
+import { FC, useState } from 'react';
 import { CheckSquare, Square } from "lucide-react"
 
 interface Service {
@@ -67,7 +68,15 @@ function Card() {
             {selected.includes(service.id) ? <CheckSquare size={20} className="text-black" /> : <Square size={20} />}
           </div>
 
-          <img src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
+          <div className="mb-4 h-28 w-full">
+            <Image
+              src={service.image}
+              alt={service.title}
+              width={112}
+              height={112}
+              className="h-full w-full object-contain"
+            />
+          </div>
 
           <h3 className="text-center font-semibold">{service.title}</h3>
         </div>

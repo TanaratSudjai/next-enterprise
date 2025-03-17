@@ -1,6 +1,5 @@
 "use client"
-import { useState } from "react"
-
+import React from "react"
 function ButtonGetStarted() {
   return (
     <button className="group relative mt-10 inline-flex items-center rounded-full bg-[#E33D3D] py-3 pr-14 pl-6 text-white transition-all duration-500 ease-out hover:cursor-pointer hover:bg-[#3f3f3f] hover:shadow-xl hover:ring-white/20 active:scale-95">

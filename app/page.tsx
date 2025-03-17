@@ -1,5 +1,4 @@
 "use client"
-import Card from "components/Section/childSection/CardComponents/Card"
 import Link from "next/link"
 import Navbar from "components/Navbar/Navbar"
 import Topbar from "components/Navbar/Topbar"
