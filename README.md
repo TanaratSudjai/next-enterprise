@@ -1,14 +1,7 @@
-
 ### Next.js Enterprise Boilerplate 
 
-</br>
 
-  [![GitHub Actions Workflow Status][check-workflow-badge]][check-workflow-badge-link] [![GitHub License][github-license-badge]][github-license-badge-link] [![GitHub contributors][github-contributors-badge]][github-contributors-badge-link] [![Discord][discord-badge]][discord-badge-link] [![Blazity][made-by-blazity-badge]][made-by-blazity-badge-link]
 
-Welcome to the _Next.js Enterprise Boilerplate_, an open-source template for enterprise projects! It's loaded with features that'll help you build a high-performance, maintainable, and enjoyable app. We've done all the heavy lifting for you, so sit back, relax, and get ready to conquer the world with your incredible app! 🌍
-
-> [!NOTE]
-> **Blazity** is a group of Next.js/Headless experts. Contact us at [contact@blazity.com](https://blazity.com) if you’d like to talk about your project or just to have a chat with us
 
 ### Integrated features
 
@@ -311,8 +304,6 @@ This project is licensed under the MIT License. For more information, see the [L
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
 <!-- Badges and links -->
 
 [check-workflow-badge]: https://img.shields.io/github/actions/workflow/status/blazity/next-enterprise/check.yml?label=check
@@ -326,3 +317,159 @@ This project is licensed under the MIT License. For more information, see the [L
 [github-contributors-badge-link]: https://github.com/Blazity/next-enterprise/graphs/contributors
 [discord-badge-link]: https://blazity.com/discord
 [made-by-blazity-badge-link]: https://blazity.com/?utm_source=nextenterprise&utm_medium=github
+
+# Next Enterprise Project
+
+[English](#english) | [ภาษาไทย](#thai)
+
+<a name="english"></a>
+## 🌟 Next Enterprise Project
+
+A modern enterprise website built with Next.js, TypeScript, and Tailwind CSS, featuring responsive design and interactive components.
+
+### 🚀 Getting Started
+
+1. **Prerequisites**
+   - Node.js (version 20.0.0 or higher)
+   - pnpm (version 9.1.0 or higher)
+
+2. **Installation**
+   ```bash
+   # Clone the repository
+   git clone <repository-url>
+   cd next-enterprise
+
+   # Install dependencies
+   pnpm install
+   ```
+
+3. **Development**
+   ```bash
+   # Start development server
+   pnpm dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+4. **Build**
+   ```bash
+   # Create production build
+   pnpm build
+
+   # Start production server
+   pnpm start
+   ```
+
+### 🛠 Project Structure
+
+```
+next-enterprise/
+├── components/           # React components
+│   ├── Navbar/          # Navigation components
+│   └── Section/         # Page sections
+│       └── childSection/
+│           ├── ButtonGetStarted/
+│           ├── CardComponents/
+│           ├── Resources/
+│           └── SupportBG/
+├── public/              # Static files
+│   └── icons/          # SVG icons
+├── styles/             # Global styles
+└── pages/              # Next.js pages
+```
+
+### 📱 Features
+
+- Responsive design for all devices
+- Modern UI with Tailwind CSS
+- Interactive components
+- Optimized images using Next.js Image component
+- TypeScript for better type safety
+- ESLint and Prettier for code quality
+
+### 🔧 Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Create production build
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+- `pnpm format` - Format code with Prettier
+
+---
+
+<a name="thai"></a>
+## 🌟 Next Enterprise Project (ภาษาไทย)
+
+เว็บไซต์องค์กรสมัยใหม่ที่พัฒนาด้วย Next.js, TypeScript และ Tailwind CSS พร้อมการออกแบบที่รองรับทุกอุปกรณ์และคอมโพเนนต์แบบโต้ตอบ
+
+### 🚀 เริ่มต้นใช้งาน
+
+1. **ความต้องการของระบบ**
+   - Node.js (เวอร์ชัน 20.0.0 ขึ้นไป)
+   - pnpm (เวอร์ชัน 9.1.0 ขึ้นไป)
+
+2. **การติดตั้ง**
+   ```bash
+   # Clone โปรเจค
+   git clone <repository-url>
+   cd next-enterprise
+
+   # ติดตั้ง dependencies
+   pnpm install
+   ```
+
+3. **การพัฒนา**
+   ```bash
+   # เริ่มเซิร์ฟเวอร์สำหรับพัฒนา
+   pnpm dev
+   ```
+   เปิด [http://localhost:3000](http://localhost:3000) ในเบราว์เซอร์
+
+4. **การ Build**
+   ```bash
+   # สร้างเวอร์ชันสำหรับใช้งานจริง
+   pnpm build
+
+   # เริ่มเซิร์ฟเวอร์สำหรับใช้งานจริง
+   pnpm start
+   ```
+
+### 🛠 โครงสร้างโปรเจค
+
+```
+next-enterprise/
+├── components/           # React components
+│   ├── Navbar/          # ส่วนเมนูนำทาง
+│   └── Section/         # ส่วนต่างๆ ของหน้าเว็บ
+│       └── childSection/
+│           ├── ButtonGetStarted/
+│           ├── CardComponents/
+│           ├── Resources/
+│           └── SupportBG/
+├── public/              # ไฟล์ static
+│   └── icons/          # ไอคอน SVG
+├── styles/             # สไตล์ส่วนกลาง
+└── pages/              # หน้าเว็บของ Next.js
+```
+
+### 📱 คุณสมบัติ
+
+- รองรับการแสดงผลบนทุกอุปกรณ์
+- การออกแบบ UI ทันสมัยด้วย Tailwind CSS
+- คอมโพเนนต์แบบโต้ตอบ
+- รูปภาพที่ผ่านการ optimize ด้วย Next.js Image
+- TypeScript สำหรับความปลอดภัยของ type
+- ESLint และ Prettier สำหรับคุณภาพโค้ด
+
+### 🔧 คำสั่งที่ใช้งานได้
+
+- `pnpm dev` - เริ่มเซิร์ฟเวอร์สำหรับพัฒนา
+- `pnpm build` - สร้างเวอร์ชันสำหรับใช้งานจริง
+- `pnpm start` - เริ่มเซิร์ฟเวอร์สำหรับใช้งานจริง
+- `pnpm lint` - ตรวจสอบโค้ดด้วย ESLint
+- `pnpm format` - จัดรูปแบบโค้ดด้วย Prettier
+
+### 📝 หมายเหตุ
+
+- ตรวจสอบให้แน่ใจว่าได้ติดตั้ง Node.js และ pnpm ในเวอร์ชันที่ถูกต้อง
+- หากพบปัญหาในการติดตั้ง dependencies ให้ลบโฟลเดอร์ node_modules และ .pnpm-store แล้วทำการติดตั้งใหม่
+- สำหรับการ deploy ควรใช้คำสั่ง `pnpm build` เพื่อสร้างเวอร์ชันที่ optimize แล้ว
