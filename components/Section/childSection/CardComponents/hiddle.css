@@ -1,0 +1,8 @@
+#hidden-scrollbar {
+    overflow: auto;
+    scrollbar-width: none; /* สำหรับ Firefox */
+  }
+  
+#hidden-scrollbar::-webkit-scrollbar {
+    display: none; /* สำหรับ Chrome, Safari */
+  }

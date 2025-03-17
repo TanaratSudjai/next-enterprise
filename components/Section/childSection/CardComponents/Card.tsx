@@ -1,9 +1,8 @@
 "use client"
 import React from "react"
 import { useState } from "react"
-import Image from "next/image"
 import { CheckSquare, Square } from "lucide-react"
-
+import "./hiddle.css"
 interface Service {
   id: number
   title: string
@@ -61,7 +60,7 @@ function Card() {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-md shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             }`}
             onClick={() => toggleSelection(service.id)}
@@ -80,11 +79,11 @@ function Card() {
         ))}
       </div>
 
-      <div className="hidden overflow-x-auto sm:flex md:gap-6 xl:hidden">
+      <div className="hidden overflow-x-auto sm:flex md:gap-6 lg:hidden xl:hidden" id="hidden-scrollbar">
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative flex-shrink-0 cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-md shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative flex-shrink-0 cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             } w-[250px]`}
             onClick={() => toggleSelection(service.id)}
@@ -107,7 +106,7 @@ function Card() {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-md shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             }`}
             onClick={() => toggleSelection(service.id)}

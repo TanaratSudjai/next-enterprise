@@ -3,8 +3,8 @@ import React from "react"
 
 function Alone() {
   return (
-    <div className="container mx-auto max-w-7xl">
-      <div className="mt-10 flex w-full max-w-6xl flex-col-reverse items-start justify-start gap-6 py-12 md:flex-row">
+    <div className="container mx-auto px-4 py-8">
+      <div className="mt-10 flex w-full flex-col-reverse items-start justify-start gap-6 py-12 lg:flex-row">
         {/* ข้อความ */}
         <div className="flex w-full flex-col justify-start space-y-4 md:w-1/2">
           <p className="text-left font-serif text-5xl leading-tight">Don't grow it alone</p>
@@ -18,7 +18,7 @@ function Alone() {
         </div>
 
         {/* รูปภาพ */}
-        <div className="flex w-full justify-start md:w-1/2 md:justify-end">
+        <div className="flex w-full justify-start md:w-1/2 md:justify-start lg:justify-end">
           <Image
             src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c4794ce4765_Illustration%3DPlant%201.svg"
             alt="Woman watering bar chart illustration"
