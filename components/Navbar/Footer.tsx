@@ -8,7 +8,7 @@ interface FooterLinkProps {
 }
 
 const FooterLink: React.FC<FooterLinkProps> = ({ href, children }) => (
-  <Link href={href} className="text-gray-600 transition-colors duration-200 hover:text-gray-800">
+  <Link href={href} className="text-gray-800 transition-colors duration-200 hover:text-black">
     {children}
   </Link>
 )
@@ -20,7 +20,7 @@ interface FooterColumnProps {
 
 const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => (
   <div className="flex flex-col space-y-3">
-    <h3 className="mb-1 font-semibold text-gray-800">{title}</h3>
+    <h3 className="mb-1 text-xl font-bold text-black">{title}</h3>
     {links.map((link) => (
       <FooterLink key={link.name} href={link.href}>
         {link.name}
@@ -97,14 +97,14 @@ const Footer: React.FC<FooterProps> = ({ companyName = "SupportNinja", year = 20
           </Link>
         </div>
 
-        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+        <div className="mb-12 grid grid-cols-2 gap-8 md:grid-cols-5 lg:grid-cols-5">
           <FooterColumn title="Solutions" links={solutions} />
           <FooterColumn title="Industries" links={industries} />
           <FooterColumn title="Resources" links={resources} />
           <FooterColumn title="Company" links={company} />
           <FooterColumn title="Follow" links={social} />
         </div>
-        <button className="group relative mt-10 inline-flex w-auto items-center rounded-full bg-[#ee4b4a] py-3 pr-14 pl-6 text-white transition-all duration-500 ease-out hover:cursor-pointer hover:bg-[#3f3f3f] hover:shadow-xl hover:ring-white/20 active:scale-95 md:w-[100%] lg:w-auto">
+        <button className="group relative mt-10 inline-flex w-auto items-center rounded-full bg-[#ee4b4a] py-3 pr-14 pl-6 text-white transition-all duration-500 ease-out hover:cursor-pointer hover:bg-[#3f3f3f] hover:shadow-xl hover:ring-white/20 active:scale-95 md:w-auto lg:w-auto">
           <span className="text-lg font-medium">Get Started</span>
           <div className="absolute top-1/2 right-1 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white transition-all duration-500 ease-out group-hover:shadow-md">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +121,7 @@ const Footer: React.FC<FooterProps> = ({ companyName = "SupportNinja", year = 20
 
         <div className="mt-8 flex flex-col border-t border-gray-200 pt-8 md:flex-row md:justify-between">
           <div className="mb-4 md:mb-0">
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 text-center">
               Â© {year} {companyName}, a registered trademark of Ninja Partners, LLC
             </p>
           </div>
