@@ -6,7 +6,6 @@ import React, { useEffect, useState } from "react"
 interface DropdownProps {
   items: string[]
 }
-
 interface NavItem {
   title: string
   items?: {
@@ -15,7 +14,6 @@ interface NavItem {
   icon: React.ReactNode
   link?: string
 }
-
 interface MegaDropdownProps {
   items: NavItem[]
 }
@@ -108,7 +106,7 @@ function Navbar() {
   }
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null) // Track which dropdown is open
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -169,7 +167,7 @@ function Navbar() {
   return (
     <div>
       <nav
-        className={`relative left-1/2 flex w-full max-w-[1675px] -translate-x-1/2 items-center justify-between bg-[#ffd2b4] px-10 py-6 transition-all duration-300 lg:fixed lg:top-0 lg:left-1/2 lg:z-50 lg:mt-15 lg:bg-white/10 ${
+        className={`absolute flex w-full max-w-[1675px] items-center justify-between bg-[#f7e1d2] px-10 py-6 transition-all duration-300 lg:fixed lg:top-0 lg:left-1/2 lg:z-50 lg:mt-15 lg:-translate-x-1/2 lg:bg-white/10 ${
           scrolled ? "mt-[5]" : ""
         }`}
       >

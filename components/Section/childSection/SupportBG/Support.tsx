@@ -5,7 +5,7 @@ function Support() {
   return (
     <div className="container mx-8 mt-[100px] flex max-w-7xl flex-col items-center justify-between gap-10 rounded-2xl bg-[#bfc1b9] px-4 py-6 sm:flex-col md:flex-col lg:flex-row">
       <div className="flex items-center justify-center p-4 lg:w-1/2">
-        <h2 className="text-center font-sanse text-sm md:text-xl lg:text-xl text-gray-800 md:text-center lg:text-left">
+        <h2 className="text-center font-sanse text-sm md:text-2xl lg:text-2xl text-gray-800 md:text-center lg:text-left">
           <b>
             Driving better business results <br /> for 200+ companies.
           </b>

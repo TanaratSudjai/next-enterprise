@@ -3,7 +3,7 @@ import Image from "next/image"
 import { fadeInUp} from "./animation/animation"
 function Resources() {
   return (
-    <div className="container mx-auto mt-[-200px] px-4 py-8 md:mt-[0px] lg:mt-[0px]">
+    <div className="container mx-auto mt-[-300px] px-4 py-8 md:mt-[0px] lg:mt-[0px]">
       <div className="flex w-full flex-col items-center justify-between gap-10 px-4 py-12 md:w-auto md:flex-col lg:flex-row">
         <motion.div
           className="flex w-full justify-center md:w-2/2"
