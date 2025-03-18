@@ -91,7 +91,7 @@ function Card() {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative flex-shrink-0 cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-md shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative flex-shrink-0 cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             } w-[250px]`}
             onClick={() => toggleSelection(service.id)}
@@ -103,7 +103,6 @@ function Card() {
                 <Square size={20} />
               )}
             </div>
-
             <Image
               width={100}
               height={100}
@@ -133,7 +132,7 @@ function Card() {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-md shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             }`}
             onClick={() => toggleSelection(service.id)}
@@ -146,7 +145,13 @@ function Card() {
               )}
             </div>
 
-            <Image width={300} height={300} src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
+            <Image
+              width={300}
+              height={300}
+              src={service.image}
+              alt={service.title}
+              className="mb-4 h-28 w-full object-contain"
+            />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}
