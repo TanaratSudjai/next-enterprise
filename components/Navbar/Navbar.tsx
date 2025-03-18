@@ -169,7 +169,7 @@ function Navbar() {
   return (
     <div>
       <nav
-        className={`fixed top-0 left-1/2 z-50 mt-15 flex w-full max-w-[1675px] -translate-x-1/2 items-center justify-between px-10 py-6 transition-all duration-300 ${
+        className={`relative left-1/2  flex w-full max-w-[1675px] -translate-x-1/2 items-center justify-between bg-[#ffd2b4] px-10 py-6 transition-all duration-300 lg:fixed lg:top-0 lg:left-1/2 lg:z-50 lg:mt-15 ${
           scrolled ? "mt-[5]" : ""
         }`}
       >
