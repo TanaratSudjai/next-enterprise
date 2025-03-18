@@ -1,11 +1,20 @@
 import React from "react"
 import Image from "next/image"
+import { motion } from "framer-motion"
+import { fadeInUp, fadeIn, staggerChildren } from "../Resources/animation/animation"
+
 function ServicesPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {/* Customer Support */}
-        <div className="service-card border-t border-gray-200 p-6 pt-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "100px" }}
+          variants={fadeInUp}
+          className="service-card border-t border-gray-200 p-6 pt-8"
+        >
           <div className="mb-4 flex flex-col items-start gap-2 md:flex-row lg:flex-row">
             <Image
               className=""
@@ -32,10 +41,16 @@ function ServicesPage() {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
 
         {/* Customer Experience */}
-        <div className="service-card border-t border-gray-200 p-6 pt-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "100px" }}
+          variants={fadeInUp}
+          className="service-card border-t border-gray-200 p-6 pt-8"
+        >
           <div className="mb-4 flex flex-col items-start gap-2 md:flex-row lg:flex-row">
             <Image
               className=""
@@ -62,10 +77,16 @@ function ServicesPage() {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
 
         {/* Technical Customer Support  */}
-        <div className="service-card border-t border-gray-200 p-6 pt-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "100px" }}
+          variants={fadeInUp}
+          className="service-card border-t border-gray-200 p-6 pt-8"
+        >
           <div className="mb-4 flex items-center">
             <div className="mb-4 flex flex-col items-start gap-2 md:flex-row lg:flex-row">
               <Image
@@ -93,9 +114,15 @@ function ServicesPage() {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
         {/* Content Moderation */}
-        <div className="service-card border-t border-gray-200 p-6 pt-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "100px" }}
+          variants={fadeInUp}
+          className="service-card border-t border-gray-200 p-6 pt-8"
+        >
           <div className="mb-4 flex items-center">
             <div className="mb-4 flex flex-col items-start gap-2 md:flex-row lg:flex-row">
               <Image
@@ -123,10 +150,16 @@ function ServicesPage() {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
 
         {/* Data Processing */}
-        <div className="service-card border-t border-gray-200 p-6 pt-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "100px" }}
+          variants={fadeInUp}
+          className="service-card border-t border-gray-200 p-6 pt-8"
+        >
           <div className="mb-4 flex items-center">
             <div className="mb-4 flex flex-col items-start gap-2 md:flex-row lg:flex-row">
               <Image
@@ -154,10 +187,16 @@ function ServicesPage() {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
 
         {/* Finance & Accounting */}
-        <div className="service-card border-t border-gray-200 p-6 pt-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "100px" }}
+          variants={fadeInUp}
+          className="service-card border-t border-gray-200 p-6 pt-8"
+        >
           <div className="mb-4 flex items-center">
             <div className="mb-4 flex flex-col items-start gap-2 md:flex-row lg:flex-row">
               <Image
@@ -185,7 +224,7 @@ function ServicesPage() {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

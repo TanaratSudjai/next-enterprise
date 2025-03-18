@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import { motion } from "framer-motion"
+import { fadeInUp, fadeIn, staggerChildren } from "../Resources/animation/animation"
 
 interface Testimonial {
   quote: string
@@ -55,21 +57,39 @@ function CardResoult() {
   return (
     <div className="pt-16 font-serif">
       <div className="flex flex-col justify-center px-4">
-        <h2 className="mb-12 text-center font-serif text-4xl text-gray-900 md:text-5xl lg:text-7xl">
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "100px" }}
+          variants={fadeInUp}
+          className="mb-12 text-center font-serif text-4xl text-gray-900 md:text-5xl lg:text-7xl"
+        >
           Why our clients stick with us
-        </h2>
+        </motion.h2>
 
-        <div className="container mx-auto max-w-7xl">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "100px" }}
+          variants={fadeInUp}
+          className="container mx-auto max-w-7xl"
+        >
           <div className="relative flex flex-col items-center justify-center rounded-4xl bg-[url('/bg/bg.svg')] bg-cover bg-center p-8 md:p-12">
-            <blockquote className="relative z-10 w-[60%]">
+            <motion.blockquote
+              className="relative z-10 w-[60%]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "100px" }}
+              variants={fadeInUp}
+            >
               <p className="mb-8 text-center text-xl text-gray-800 italic md:text-2xl">"{currentTestimonial.quote}"</p>
               <footer className="text-center">
                 <div className="font-bold text-gray-900">{currentTestimonial.author}</div>
                 <div className="text-gray-600">{currentTestimonial.title}</div>
               </footer>
-            </blockquote>
+            </motion.blockquote>
 
-            <div className="mt-12 flex w-full items-center justify-center md:justify-between lg:justify-between gap-[50%]">
+            <div className="mt-12 flex w-full items-center justify-center gap-[50%] md:justify-between lg:justify-between">
               <div className="hidden space-x-2 font-bold text-gray-800 md:flex lg:flex">
                 {testimonials.map((_, index) => (
                   <button
@@ -115,7 +135,7 @@ function CardResoult() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

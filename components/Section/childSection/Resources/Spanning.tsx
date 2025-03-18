@@ -1,6 +1,8 @@
 import Image from "next/image"
 import React from "react"
 import ButtonGetStartedGreen from "../ButtonGetStarted/ButtonGetStartedGreen"
+import { motion } from "framer-motion"
+import { fadeInUp, fadeIn, staggerChildren } from "../Resources/animation/animation"
 
 const people = [
   {
@@ -66,26 +68,56 @@ function Spanning() {
     <div className="relative flex w-full justify-center bg-[url('/bg/wave-haikei-2.svg')] bg-cover bg-top pb-[100px] text-center">
       <div className="container mx-auto flex max-w-7xl justify-center">
         <div className="flex max-w-lg flex-col justify-center px-10 pt-[350px] md:px-0 lg:px-0">
-          <h2 className="mb-12 font-serif text-4xl text-gray-800 md:text-5xl lg:text-6xl">
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "100px" }}
+            variants={fadeInUp}
+            className="mb-12 font-serif text-4xl text-gray-800 md:text-5xl lg:text-6xl"
+          >
             Spanning a wider <br />
             world of talent
-          </h2>
-          <p className="md:text-md mb-7 text-left text-sm lg:text-lg">
+          </motion.h2>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "100px" }}
+            variants={fadeInUp}
+            className="md:text-md mb-7 text-left text-sm lg:text-lg"
+          >
             What are the odds that the most qualified people in the world live in your zip code? We’ll help you see
             further.
-          </p>
-          <p className="md:text-md mb-7 text-left text-sm lg:text-lg">
+          </motion.p>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "100px" }}
+            variants={fadeInUp}
+            className="md:text-md mb-7 text-left text-sm lg:text-lg"
+          >
             A global team extends your presence across time zones and languages—which means longer reach, constant
             uptime, and happier customers.
-          </p>
-          <p className="md:text-md mb-7 text-left text-[12px] font-bold lg:text-lg">
+          </motion.p>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "100px" }}
+            variants={fadeInUp}
+            className="md:text-md mb-7 text-left text-[12px] font-bold lg:text-lg"
+          >
             It’s time to go international. No passport required.
-          </p>
+          </motion.p>
 
           <div className="flex w-full justify-center">
-            <div className="w-auto">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "100px" }}
+              variants={fadeInUp}
+              className="w-auto"
+            >
               <ButtonGetStartedGreen />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

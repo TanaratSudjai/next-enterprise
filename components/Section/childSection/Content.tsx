@@ -8,10 +8,17 @@ import Passionate from "./Resources/Passionate"
 import Rescoures from "./Resources/Rescoures"
 import Service from "./Resources/Service"
 import Spanning from "./Resources/Spanning"
-
+import { motion } from "framer-motion"
+import { fadeInUp, fadeIn, staggerChildren } from "../childSection/Resources/animation/animation"
 function Content() {
   return (
-    <div className="mt-[-150px]">
+    <motion.div
+      className="mt-[-150px]"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "100px" }}
+      variants={fadeInUp}
+    >
       <Rescoures />
       <Alone />
       <Service />
@@ -21,7 +28,7 @@ function Content() {
       <Passionate />
       <CareerPage />
       <Better />
-    </div>
+    </motion.div>
   )
 }
 

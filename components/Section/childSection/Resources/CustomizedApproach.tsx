@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { motion } from "framer-motion"
+import { fadeInUp, fadeIn, staggerChildren } from "../Resources/animation/animation"
 
 const steps = {
   "Management-as-a-Service": [
@@ -27,16 +29,38 @@ export default function CustomApproach() {
         <div className="flex flex-col gap-10 p-10 md:flex-col lg:flex-row">
           <div className="w-2/2">
             <div className="mx-7">
-              <h2 className="text-left font-serif text-4xl md:text-5xl lg:text-6xl">Our customized approach</h2>
-              <p className="mt-4 max-w-md text-gray-700 md:max-w-xl">
+              <motion.h2
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "100px" }}
+                variants={fadeInUp}
+                className="text-left font-serif text-4xl md:text-5xl lg:text-6xl"
+              >
+                Our customized approach
+              </motion.h2>
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "100px" }}
+                variants={fadeInUp}
+                className="mt-4 max-w-md text-gray-700 md:max-w-xl"
+              >
                 We tailor our strategies and services based on your roadblocks and needs, delivering a strategic
                 outsourcing playbook — inclusive of technology, talent, and timing — that drives your business forward.
-              </p>
+              </motion.p>
             </div>
           </div>
 
           <div className="w-2/2">
-            <h3 className="mb-4 text-lg font-semibold">Get set up in 5 easy steps</h3>
+            <motion.h3
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "100px" }}
+              variants={fadeIn}
+              className="mb-4 text-lg font-semibold"
+            >
+              Get set up in 5 easy steps
+            </motion.h3>
 
             <div className="mx-7 mb-6 flex justify-center space-x-2">
               {Object.keys(steps).map((tab) => (
@@ -54,7 +78,14 @@ export default function CustomApproach() {
 
             <div className="flex flex-col justify-center space-y-4">
               {steps[selectedTab].map((step, index) => (
-                <div key={index} className="flex max-w-xl items-start space-x-5 md:mx-8">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "100px" }}
+                  variants={fadeInUp}
+                  key={index}
+                  className="flex max-w-xl items-start space-x-5 md:mx-8"
+                >
                   <div className="">
                     <div className="flex h-7 w-7 items-center justify-center rounded-full border bg-white font-bold text-gray-800">
                       {index + 1}
@@ -63,7 +94,7 @@ export default function CustomApproach() {
                   <div className="flex justify-start">
                     <p className="font-sans text-[11px] text-black md:text-[15px] lg:text-lg">{step}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
 
