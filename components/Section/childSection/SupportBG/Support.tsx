@@ -11,7 +11,7 @@ function Support() {
           </b>
         </h2>
       </div>
-      <div className="flex items-center justify-center gap-6 px-2 py-2 sm:w-full md:flex">
+      <div className="flex flex-wrap items-center justify-center gap-6 px-2 py-2 sm:w-full md:flex">
         <Image
           src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c0380ce484b_B%26MG_foundation.svg"
           alt="Company Logo"

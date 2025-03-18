@@ -1,8 +1,9 @@
-#hidden-scrollbar {
-    overflow: auto;
-    scrollbar-width: none; /* สำหรับ Firefox */
-  }
-  
-#hidden-scrollbar::-webkit-scrollbar {
-    display: none; /* สำหรับ Chrome, Safari */
-  }
+/* hiddle.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

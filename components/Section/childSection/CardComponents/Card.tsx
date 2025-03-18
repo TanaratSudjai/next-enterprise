@@ -2,7 +2,7 @@
 import { CheckSquare, Square } from "lucide-react"
 import Image from "next/image"
 import React, { useState } from "react"
-import "./hiddle.css"
+
 interface Service {
   id: number
   title: string
@@ -47,6 +47,7 @@ const services: Service[] = [
       "https://cdn.prod.website-files.com/64149f79022d0c3ed8ce46e9/66ab870287012990781761a1_649438d904b97f8a9692a85a_Solution%253DE-mail%2520Support%252C%2520State%253DHover.webp",
   },
 ]
+
 function Card() {
   const [selected, setSelected] = useState<number[]>([])
 
@@ -56,6 +57,7 @@ function Card() {
 
   return (
     <div className="container mx-auto max-w-7xl bg-[#f5dfcf] p-6">
+      {/* Mobile view */}
       <div className="grid grid-cols-1 gap-6 sm:hidden">
         {services.map((service) => (
           <div
@@ -85,35 +87,52 @@ function Card() {
         ))}
       </div>
 
-      <div className="hidden overflow-x-auto sm:flex md:gap-6 lg:hidden xl:hidden" id="hidden-scrollbar">
-        {services.map((service) => (
-          <div
-            key={service.id}
-            className={`relative flex-shrink-0 cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
-              selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
-            } w-[250px]`}
-            onClick={() => toggleSelection(service.id)}
-          >
-            <div className="absolute top-2 right-2 text-gray-700">
-              {selected.includes(service.id) ? (
-                <CheckSquare size={20} className="text-gray-700" />
-              ) : (
-                <Square size={20} />
-              )}
-            </div>
+      {/* Tablet view with horizontal scrolling */}
+      <div className="hidden sm:block lg:hidden xl:hidden">
+        <div className="flex whitespace-nowrap overflow-x-auto space-x-4 pb-6">
+          <style jsx>{`
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .flex::-webkit-scrollbar {
+              display: none;
+            }
+            
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .flex {
+              -ms-overflow-style: none;  /* IE and Edge */
+              scrollbar-width: none;  /* Firefox */
+            }
+          `}</style>
+          
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className={`inline-block flex-none w-[250px] relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
+                selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
+              }`}
+              onClick={() => toggleSelection(service.id)}
+            >
+              <div className="absolute top-2 right-2 text-gray-700">
+                {selected.includes(service.id) ? (
+                  <CheckSquare size={20} className="text-gray-700" />
+                ) : (
+                  <Square size={20} />
+                )}
+              </div>
 
-            <Image
-              src={service.image}
-              alt={service.title}
-              className="mb-4 h-28 w-full object-contain"
-              width={100}
-              height={100}
-            />
-            <h3 className="text-center font-semibold">{service.title}</h3>
-          </div>
-        ))}
+              <Image
+                src={service.image}
+                alt={service.title}
+                className="mb-4 h-28 w-full object-contain"
+                width={100}
+                height={100}
+              />
+              <h3 className="text-center font-semibold">{service.title}</h3>
+            </div>
+          ))}
+        </div>
       </div>
 
+      {/* Desktop view */}
       <div className="hidden xl:grid xl:grid-cols-6 xl:gap-6">
         {services.map((service) => (
           <div
