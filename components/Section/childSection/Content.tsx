@@ -14,7 +14,7 @@ function Content() {
   return (
     <div className="">
       <motion.div
-        className="mx-6 mt-[-150px] w-auto sm:mx-6 md:mx-15 lg:mx-50 xl:mx-50"
+        className="mx-2 mt-[-150px] w-auto sm:mx-6 md:mx-15 lg:mx-50 xl:mx-50"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "100px" }}

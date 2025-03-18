@@ -5,7 +5,7 @@ import { fadeInUp } from "../Resources/animation/animation"
 
 function Alone() {
   return (
-    <div className="container mx-4 mt-[-50px] w-auto px-8 md:mx-auto md:mt-[0px] lg:mx-auto">
+    <div className="mt-[-50px] w-auto px-8 md:mx-auto md:mt-[0px] lg:mx-auto">
       <div className="flex w-auto flex-col-reverse items-start justify-start gap-6 py-12 lg:flex-row">
         {/* ข้อความ */}
         <motion.div
