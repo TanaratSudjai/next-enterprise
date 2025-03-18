@@ -56,8 +56,7 @@ function Card() {
   }
 
   return (
-    <div className="container mx-auto max-w-7xl bg-[#f5dfcf] p-6">
-      {/* Mobile view */}
+    <div className="container mx-8 w-full md:max-w-4xl lg:max-w-7xl">
       <div className="grid grid-cols-1 gap-6 sm:hidden">
         {services.map((service) => (
           <div
@@ -67,6 +66,36 @@ function Card() {
             }`}
             onClick={() => toggleSelection(service.id)}
           >
+            <div className="flex items-center space-x-4">
+              <Image
+                width={100}
+                height={100}
+                src={service.image}
+                alt={service.title}
+                className="h-16 w-16 object-contain"
+              />
+              <h3 className="flex-1 font-semibold">{service.title}</h3>
+              <div className="text-gray-700">
+                {selected.includes(service.id) ? (
+                  <CheckSquare size={20} className="text-gray-700" />
+                ) : (
+                  <Square size={20} />
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="custom-scrollbar hidden w-full overflow-x-scroll sm:flex md:gap-6 xl:hidden">
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className={`relative flex-shrink-0 cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-md shadow-xl transition-all duration-300 hover:bg-white ${
+              selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
+            } w-[250px]`}
+            onClick={() => toggleSelection(service.id)}
+          >
             <div className="absolute top-2 right-2 text-gray-700">
               {selected.includes(service.id) ? (
                 <CheckSquare size={20} className="text-gray-700" />
@@ -76,68 +105,35 @@ function Card() {
             </div>
 
             <Image
+              width={100}
+              height={100}
               src={service.image}
               alt={service.title}
               className="mb-4 h-28 w-full object-contain"
-              width={100}
-              height={100}
             />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}
       </div>
+      <style jsx>{`
+      .custom-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
 
-      {/* Tablet view with horizontal scrolling */}
-      <div className="hidden sm:block lg:hidden xl:hidden">
-        <div className="flex whitespace-nowrap overflow-x-auto space-x-4 pb-6">
-          <style jsx>{`
-            /* Hide scrollbar for Chrome, Safari and Opera */
-            .flex::-webkit-scrollbar {
-              display: none;
-            }
-            
-            /* Hide scrollbar for IE, Edge and Firefox */
-            .flex {
-              -ms-overflow-style: none;  /* IE and Edge */
-              scrollbar-width: none;  /* Firefox */
-            }
-          `}</style>
-          
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className={`inline-block flex-none w-[250px] relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
-                selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
-              }`}
-              onClick={() => toggleSelection(service.id)}
-            >
-              <div className="absolute top-2 right-2 text-gray-700">
-                {selected.includes(service.id) ? (
-                  <CheckSquare size={20} className="text-gray-700" />
-                ) : (
-                  <Square size={20} />
-                )}
-              </div>
+      .custom-scrollbar {
+        -ms-overflow-style: none;  /* Hide scrollbar in IE/Edge */
+        scrollbar-width: none;  /* Hide scrollbar in Firefox */
+      }
 
-              <Image
-                src={service.image}
-                alt={service.title}
-                className="mb-4 h-28 w-full object-contain"
-                width={100}
-                height={100}
-              />
-              <h3 className="text-center font-semibold">{service.title}</h3>
-            </div>
-          ))}
-        </div>
-      </div>
+        }
+      }
+    `}</style>
 
-      {/* Desktop view */}
       <div className="hidden xl:grid xl:grid-cols-6 xl:gap-6">
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-md shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             }`}
             onClick={() => toggleSelection(service.id)}
@@ -150,13 +146,7 @@ function Card() {
               )}
             </div>
 
-            <Image
-              src={service.image}
-              alt={service.title}
-              width={100}
-              height={100}
-              className="mb-4 h-28 w-full object-contain"
-            />
+            <img src={service.image} alt={service.title} className="mb-4 h-28 w-full object-contain" />
             <h3 className="text-center font-semibold">{service.title}</h3>
           </div>
         ))}

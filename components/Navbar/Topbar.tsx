@@ -2,11 +2,11 @@ import React from "react"
 
 function Topbar() {
   return (
-    <div className="flex text-[10px] md:text-lg h-[40px] md:h-[50] lg:h-[50] items-center justify-center bg-[#ee4b4a] text-white">
-      <p>
-        The 2025 CX Outsourcing Report is Here{" "}
+    <div className="flex items-center justify-center bg-[#ee4b4a] py-4 text-[15px] text-center text-white md:h-[50] md:text-[13px] lg:h-[50]">
+      <p className="font-bold text-gray-300">
+        The 2025 CX Outsourcing Report is Here!{" "}
         <span>
-          <a href="" className="text-yellow-300 underline">
+          <a href="" className="text-amber-400 underline">
             Access the Full Report
           </a>
         </span>
