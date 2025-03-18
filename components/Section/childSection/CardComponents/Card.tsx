@@ -61,7 +61,7 @@ function Card() {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-7 shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             }`}
             onClick={() => toggleSelection(service.id)}

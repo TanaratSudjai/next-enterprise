@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import React from "react"
-import { fadeInUp} from "../Resources/animation/animation"
+import { fadeInUp } from "../Resources/animation/animation"
 
 function ServicesPage() {
   return (
@@ -28,8 +28,7 @@ function ServicesPage() {
             <h2 className="text-xl font-semibold">Customer Support</h2>
           </div>
           <p className="mb-6 text-gray-600">
-            Transform every interaction into a positive experience with customer-centric support that scales as you
-            grow.
+            span every interaction into a positive experience with customer-centric support that scales as you grow.
           </p>
           <a href="#" className="flex items-center font-medium text-black">
             Explore Customer Support
