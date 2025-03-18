@@ -12,23 +12,25 @@ import Spanning from "./Resources/Spanning"
 import { fadeInUp } from "../childSection/Resources/animation/animation"
 function Content() {
   return (
-    <motion.div
-      className="mt-[-150px]"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "100px" }}
-      variants={fadeInUp}
-    >
-      <Rescoures />
-      <Alone />
-      <Service />
-      <CardResoult />
+    <div className="">
+      <motion.div
+        className="mx-6 mt-[-150px] w-auto sm:mx-6 md:mx-15 lg:mx-50 xl:mx-50"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "100px" }}
+        variants={fadeInUp}
+      >
+        <Rescoures />
+        <Alone />
+        <Service />
+        <CardResoult />
+      </motion.div>
       <Spanning />
       <CustomizedApproach />
       <Passionate />
       <CareerPage />
       <Better />
-    </motion.div>
+    </div>
   )
 }
 

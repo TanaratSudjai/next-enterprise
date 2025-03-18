@@ -56,12 +56,12 @@ function Card() {
   }
 
   return (
-    <div className="container mx-8 w-full md:max-w-4xl lg:max-w-7xl">
+    <div className="w-full text-left font-light">
       <div className="grid grid-cols-1 gap-6 sm:hidden">
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-7 shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative mx-5 cursor-pointer rounded-xl bg-[#fbeee6] p-7 shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             }`}
             onClick={() => toggleSelection(service.id)}
@@ -74,7 +74,7 @@ function Card() {
                 alt={service.title}
                 className="h-16 w-16 object-contain"
               />
-              <h3 className="flex-1 font-semibold">{service.title}</h3>
+              <h3 className="flex-1 font-light">{service.title}</h3>
               <div className="text-gray-700">
                 {selected.includes(service.id) ? (
                   <CheckSquare size={20} className="text-gray-700" />
@@ -110,7 +110,7 @@ function Card() {
               alt={service.title}
               className="mb-4 h-28 w-full object-contain"
             />
-            <h3 className="text-center font-semibold">{service.title}</h3>
+            <h3 className="text-center font-light">{service.title}</h3>
           </div>
         ))}
       </div>
@@ -132,7 +132,7 @@ function Card() {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-4 shadow-xl transition-all duration-300 hover:bg-white ${
+            className={`relative cursor-pointer rounded-xl bg-[#fbeee6] p-10 shadow-xl transition-all duration-300 hover:bg-white ${
               selected.includes(service.id) ? "bg-white opacity-100 shadow-xl" : "bg-[#fbeee6]"
             }`}
             onClick={() => toggleSelection(service.id)}
@@ -152,7 +152,7 @@ function Card() {
               alt={service.title}
               className="mb-4 h-28 w-full object-contain"
             />
-            <h3 className="text-center font-semibold">{service.title}</h3>
+            <h3 className="text-center font-light">{service.title}</h3>
           </div>
         ))}
       </div>

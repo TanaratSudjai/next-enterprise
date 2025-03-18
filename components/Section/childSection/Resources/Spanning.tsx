@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import React from "react"
 import ButtonGetStartedGreen from "../ButtonGetStarted/ButtonGetStartedGreen"
-import { fadeInUp} from "../Resources/animation/animation"
+import { fadeInUp } from "../Resources/animation/animation"
 
 const people = [
   {
