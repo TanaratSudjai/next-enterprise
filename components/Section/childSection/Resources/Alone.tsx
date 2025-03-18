@@ -3,7 +3,7 @@ import React from "react"
 
 function Alone() {
   return (
-    <div className="container mx-8 mt-[-50px] bg-amber-400 px-8 md:mt-[0px] w-auto">
+    <div className="container mx-8 mt-[-50px] px-8 md:mt-[0px] w-auto">
       <div className="flex w-auto flex-col-reverse items-start justify-start gap-6 py-12 lg:flex-row">
         {/* ข้อความ */}
         <div className="lg:w-1.5/2 flex w-full flex-col justify-start space-y-4 md:w-[80%]">

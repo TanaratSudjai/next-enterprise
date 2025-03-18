@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export default function CareerPage() {
   return (
-    <div className="container mx-auto mb-40 max-w-7xl md:mb-25">
-      <div className="flex flex-col-reverse items-center justify-center gap-[120px] md:flex-col-reverse lg:flex-row">
+    <div className="container mx-auto mt-[-200px] mb-40 max-w-7xl  md:mt-0 md:mb-25 lg:mt-0">
+      <div className="mx-8 flex flex-col-reverse items-center justify-center gap-[120px] md:mx-0 md:flex-col-reverse lg:mx-0 lg:flex-row">
         <div className="relative flex w-full md:flex-col md:justify-center lg:flex-row">
           <div className="flex w-full justify-center">
             <Image
@@ -13,7 +13,7 @@ export default function CareerPage() {
               height={750}
               className="rounded-lg"
             />
-            <div className="absolute top-[70%] bottom-0 left-[10%] flex h-45 w-32 justify-center rounded-lg bg-[#f7e1d2] p-4 shadow-lg md:w-40">
+            <div className="absolute top-[70%] bottom-0 left-10 lf md:left-[15%] md:top-[80%]  flex h-30 w-30 justify-center rounded-lg bg-[#f7e1d2] p-4 shadow-lg md:w-40 md:h-40">
               <Image
                 src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c34dace47c3_Tile%20Illustrations__Document%202.webp"
                 alt="Icon"
