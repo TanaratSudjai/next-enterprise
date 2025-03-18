@@ -8,7 +8,7 @@ import { fadeInUp } from "../Section/childSection/Resources/animation/animation"
 function Outsourcing() {
   return (
     <div className="">
-      <section className="w-full bg-[url('/bg/wave-haikei-mobiles.svg')] bg-cover bg-center pt-32 pb-[350px] text-center md:bg-[url('/bg/wave-haikeis.svg')] md:pb-[350px] lg:pb-[350px]">
+      <section className="w-full bg-[url('/bg/wave-haikei-mobiles.svg')] bg-cover bg-center pt-10 md:pt-10 lg:pt-32 pb-[350px] text-center md:bg-[url('/bg/wave-haikeis.svg')] md:pb-[350px] lg:pb-[350px]">
         <div className="container mx-auto px-4">
           <motion.div
             className="mx-auto"
