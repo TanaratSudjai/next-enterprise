@@ -1,6 +1,6 @@
-import Image from "next/image"
 import { motion } from "framer-motion"
-import { fadeInUp, fadeIn, staggerChildren } from "./animation/animation"
+import Image from "next/image"
+import { fadeInUp} from "./animation/animation"
 function Resources() {
   return (
     <div className="container mx-auto mt-[-400px] px-4 py-8 md:mt-[0px] lg:mt-[0px]">

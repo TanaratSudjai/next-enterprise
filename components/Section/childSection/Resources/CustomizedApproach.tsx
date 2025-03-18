@@ -1,7 +1,6 @@
-import { useState } from "react"
 import { motion } from "framer-motion"
-import { fadeInUp, fadeIn, staggerChildren } from "../Resources/animation/animation"
-
+import { useState } from "react"
+import { fadeInUp } from "../Resources/animation/animation"
 const steps = {
   "Management-as-a-Service": [
     "Deep dive with us into your goals and hiring needs.",
@@ -56,7 +55,7 @@ export default function CustomApproach() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "100px" }}
-              variants={fadeIn}
+              variants={fadeInUp}
               className="mb-4 text-lg font-semibold"
             >
               Get set up in 5 easy steps

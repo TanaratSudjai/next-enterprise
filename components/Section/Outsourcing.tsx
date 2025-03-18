@@ -1,10 +1,10 @@
+import { motion } from "framer-motion"
 import React from "react"
 import ButtonGetStarted from "./childSection/ButtonGetStarted/ButtonGetStarted"
 import Card from "./childSection/CardComponents/Card"
 import Content from "./childSection/Content"
 import Support from "./childSection/SupportBG/Support"
-import { motion } from "framer-motion"
-import { fadeInUp, fadeIn, staggerChildren } from "../Section/childSection/Resources/animation/animation"
+import { fadeInUp } from "../Section/childSection/Resources/animation/animation"
 function Outsourcing() {
   return (
     <div className="">

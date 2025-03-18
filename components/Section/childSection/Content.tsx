@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import React from "react"
 import Alone from "./Resources/Alone"
 import Better from "./Resources/Better"
@@ -8,8 +9,7 @@ import Passionate from "./Resources/Passionate"
 import Rescoures from "./Resources/Rescoures"
 import Service from "./Resources/Service"
 import Spanning from "./Resources/Spanning"
-import { motion } from "framer-motion"
-import { fadeInUp, fadeIn, staggerChildren } from "../childSection/Resources/animation/animation"
+import { fadeInUp } from "../childSection/Resources/animation/animation"
 function Content() {
   return (
     <motion.div

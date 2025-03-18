@@ -1,6 +1,6 @@
-import React, { useState } from "react"
 import { motion } from "framer-motion"
-import { fadeInUp, fadeIn, staggerChildren } from "../Resources/animation/animation"
+import React, { useState } from "react"
+import { fadeInUp } from "../Resources/animation/animation"
 
 interface Testimonial {
   quote: string

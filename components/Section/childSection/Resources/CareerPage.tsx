@@ -1,6 +1,6 @@
-import Image from "next/image"
 import { motion } from "framer-motion"
-import { fadeInUp, fadeIn, staggerChildren } from "../Resources/animation/animation"
+import Image from "next/image"
+import { fadeInUp } from "../Resources/animation/animation"
 
 export default function CareerPage() {
   return (

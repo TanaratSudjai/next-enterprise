@@ -1,7 +1,7 @@
+import { motion } from "framer-motion"
 import Image from "next/image"
 import React from "react"
-import { motion } from "framer-motion"
-import { fadeInUp, fadeIn, staggerChildren } from "../Resources/animation/animation"
+import { fadeInUp } from "../Resources/animation/animation"
 
 function Alone() {
   return (
