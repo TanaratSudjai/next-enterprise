@@ -27,7 +27,7 @@ function ServicesPage() {
             />
             <h2 className="text-xl font-semibold">Customer Support</h2>
           </div>
-          <p className="mb-6 text-gray-600">
+          <p className="mb-6 text-gray-600 md:flex md:w-min md:flex-wrap md:text-left md:text-xl md:mx-7">
             span every interaction into a positive experience with customer-centric support that scales as you grow.
           </p>
           <a href="#" className="flex items-center font-medium text-black">
@@ -62,7 +62,7 @@ function ServicesPage() {
             />
             <h2 className="text-xl font-semibold">Customer Experience </h2>
           </div>
-          <p className="mb-6 text-gray-600">
+          <p className="mb-6 text-gray-600 md:flex md:w-min md:flex-wrap md:text-left md:text-xl md:mx-7">
             Enhance every stage of your customer journey and scale confidently — from a single touchpoint to the entire
             lifecycle.
           </p>
@@ -100,7 +100,7 @@ function ServicesPage() {
               <h2 className="text-xl font-semibold">Technical Customer Support</h2>{" "}
             </div>
           </div>
-          <p className="mb-6 text-gray-600">
+          <p className="mb-6 text-gray-600 md:flex md:w-min md:flex-wrap md:text-left md:text-xl md:mx-7">
             Outsource dedicated experts on your business to answer customer questions.
           </p>
           <a href="#" className="flex items-center font-medium text-black">
@@ -136,7 +136,7 @@ function ServicesPage() {
               <h2 className="text-xl font-semibold">Content Moderation</h2>{" "}
             </div>
           </div>
-          <p className="mb-6 text-gray-600">
+          <p className="mb-6 text-gray-600 md:flex md:w-min md:flex-wrap md:text-left md:text-xl md:mx-7">
             Build a thriving online presence with a team specially trained to uphold your community standards.
           </p>
           <a href="#" className="flex items-center font-medium text-black">
@@ -173,7 +173,7 @@ function ServicesPage() {
               <h2 className="text-xl font-semibold">Data Processing</h2>
             </div>
           </div>
-          <p className="mb-6 text-gray-600">
+          <p className="mb-6 text-gray-600 md:flex md:w-min md:flex-wrap md:text-left md:text-xl md:mx-7">
             Receive analyzed data, specific to how you need it interpreted and presented.
           </p>
           <a href="#" className="flex items-center font-medium text-black">
@@ -210,7 +210,7 @@ function ServicesPage() {
               <h2 className="text-xl font-semibold">Finance & Accounting</h2>
             </div>
           </div>
-          <p className="mb-6 text-gray-600">
+          <p className="mb-6 text-gray-600 md:flex md:w-min md:flex-wrap md:text-left md:text-xl md:mx-7">
             Streamline your financial operations with expert accounting and bookkeeping services.
           </p>
           <a href="#" className="flex items-center font-medium text-black">
