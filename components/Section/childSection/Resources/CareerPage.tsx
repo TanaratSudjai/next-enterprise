@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export default function CareerPage() {
   return (
-    <div className="container mx-auto mb-40  md:mb-25 max-w-7xl">
+    <div className="container mx-auto mb-40 max-w-7xl md:mb-25">
       <div className="flex flex-col-reverse items-center justify-center gap-[120px] md:flex-col-reverse lg:flex-row">
         <div className="relative flex w-full md:flex-col md:justify-center lg:flex-row">
-          <div className="flex w-full justify-center ">
+          <div className="flex w-full justify-center">
             <Image
               src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c7fc2ce4791_Stock%20Image__Conference%20Room.webp"
               alt="Team meeting"
@@ -24,7 +24,7 @@ export default function CareerPage() {
           </div>
         </div>
 
-        <div className="w-full p-6 md:p-10">
+        <div className="w-full md:p-10">
           <p className="font-serif text-5xl leading-tight text-gray-900 md:text-5xl">
             Grow your career and unleash your potential.
           </p>
