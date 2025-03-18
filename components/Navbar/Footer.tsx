@@ -121,7 +121,7 @@ const Footer: React.FC<FooterProps> = ({ companyName = "SupportNinja", year = 20
 
         <div className="mt-8 flex flex-col border-t border-gray-200 pt-8 md:flex-row md:justify-between">
           <div className="mb-4 md:mb-0">
-            <p className="text-sm text-gray-600 text-center">
+            <p className="text-center text-sm text-gray-600">
               Â© {year} {companyName}, a registered trademark of Ninja Partners, LLC
             </p>
           </div>
