@@ -4,6 +4,7 @@ import Card from "./childSection/CardComponents/Card"
 import Content from "./childSection/Content"
 import Support from "./childSection/SupportBG/Support"
 import { fadeInUp } from "../Section/childSection/Resources/animation/animation"
+
 function Outsourcing() {
   return (
     <div className="">
@@ -20,10 +21,16 @@ function Outsourcing() {
               Quickly and seamlessly scale your team with agile, highly <br /> customizable outsourcing solutions that
               power your growth.
             </h3>
-            <h1 className="font-serif text-5xl text-gray-800 md:text-6xl lg:text-6xl xl:text-7xl">
-              Outsourcing worth talking about
-            </h1>
           </motion.div>
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "100px" }}
+            variants={fadeInUp}
+            className="ml9 font-serif text-5xl text-gray-800 md:text-6xl lg:text-6xl xl:text-7xl"
+          >
+            Outsourcing worth talking about
+          </motion.h1>
         </div>
         <div className="container mx-auto text-center sm:mx-auto md:px-0 lg:px-12 xl:px-12">
           <div className="pt-0 sm:pt-0 md:pt-30 lg:pt-12 xl:pt-12">
