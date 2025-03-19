@@ -5,7 +5,7 @@ import { fadeInUp } from "../Resources/animation/animation"
 
 function ServicesPage() {
   return (
-    <div className="py-8">
+    <div className="py-8 px-8 sm:px-8 md:px-20 lg:mx-auto lg:px-40 xl:px-40">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {/* Customer Support */}
         <motion.div

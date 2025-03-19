@@ -167,7 +167,7 @@ function Navbar() {
   return (
     <div>
       <nav
-        className={`absolute flex w-full max-w-[1675px] items-center justify-between bg-[#f7e1d2] px-10 transition-all duration-300 lg:fixed lg:top-0 lg:left-1/2 lg:z-50 lg:mt-15 lg:-translate-x-1/2 lg:bg-white/10 ${
+        className={`absolute flex w-full max-w-[1675px] pt-4 items-center justify-between bg-[#f7e1d2] px-10 transition-all duration-300 lg:fixed lg:top-0 lg:left-1/2 lg:z-50 lg:mt-15 lg:-translate-x-1/2 lg:bg-white/10 ${
           scrolled ? "mt-[5]" : ""
         }`}
       >
@@ -187,7 +187,7 @@ function Navbar() {
 
         {/* Desktop Navigation Menu */}
         <ul
-          className={`hidden space-x-8 font-semibold text-black lg:flex ${
+          className={`hidden space-x-8 font-semibold text-black lg:flex  ${
             scrolled ? "rounded-full bg-white border-1 border-gray-300 px-8 py-4" : ""
           }`}
         >

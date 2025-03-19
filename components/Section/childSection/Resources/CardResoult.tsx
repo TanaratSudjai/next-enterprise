@@ -55,7 +55,7 @@ function CardResoult() {
   }
 
   return (
-    <div className="pt-16 font-serif">
+    <div className="pt-16 font-serif md:px-20 lg:mx-auto lg:px-40 xl:px-40">
       <div className="flex flex-col justify-center px-4">
         <motion.h2
           initial="hidden"

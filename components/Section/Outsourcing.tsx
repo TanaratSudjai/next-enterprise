@@ -16,7 +16,7 @@ function Outsourcing() {
             viewport={{ once: true, margin: "100px" }}
             variants={fadeInUp}
           >
-            <h3 className="b mb-10 w-full px-19 text-lg font-light text-gray-700 md:mb-12 md:text-xl lg:text-3xl">
+            <h3 className="b mb-10 w-full text-lg font-light text-gray-700 md:mb-12 md:text-xl lg:text-3xl">
               Quickly and seamlessly scale your team with agile, highly <br /> customizable outsourcing solutions that
               power your growth.
             </h3>
@@ -25,7 +25,7 @@ function Outsourcing() {
             </h1>
           </motion.div>
         </div>
-        <div className="container mx-auto  px-3 text-center sm:mx-auto md:px-0 lg:px-12 xl:px-12">
+        <div className="container mx-auto text-center sm:mx-auto md:px-0 lg:px-12 xl:px-12">
           <div className="pt-0 sm:pt-0 md:pt-30 lg:pt-12 xl:pt-12">
             <hr className="border-1 border-t-gray-400 pt-12" />
             <h2 className="text-xl font-bold text-gray-800 md:text-2xl">

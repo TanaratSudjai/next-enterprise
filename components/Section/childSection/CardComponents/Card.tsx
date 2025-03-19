@@ -56,7 +56,7 @@ function Card() {
   }
 
   return (
-    <div className="w-full text-left font-light">
+    <div className="w-full text-left font-light bg">
       <div className="grid grid-cols-1 gap-6 sm:hidden">
         {services.map((service) => (
           <div

@@ -5,7 +5,7 @@ import Topbar from "components/Navbar/Topbar"
 import Outsourcing from "components/Section/Outsourcing"
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="">
       <Topbar />
       <Navbar />
       <section>
