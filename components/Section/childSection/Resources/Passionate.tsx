@@ -5,7 +5,7 @@ import { fadeInUp } from "../Resources/animation/animation"
 
 const PeopleSection: React.FC = () => {
   return (
-    <div className="container mx-auto bg-amber-400">
+    <div className="container mx-auto">
       <div className="flex flex-col gap-8 px-8 pt-16 md:mx-8 md:flex-col lg:flex-row">
         <motion.div
           initial="hidden"
@@ -64,7 +64,7 @@ const PeopleSection: React.FC = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "100px" }}
             variants={fadeInUp}
-            className="absolute top-[-7%] right-0 left-[65%] h-30 w-35  overflow-hidden rounded-2xl bg-[#b9bbb4] shadow-lg shadow-[#b9bbb4] md:left-[60%] md:h-50 md:w-50 lg:left-[60%] lg:h-50 lg:w-50"
+            className="absolute top-[-7%] right-0 left-[65%] h-30 w-35 overflow-hidden rounded-2xl bg-[#b9bbb4] shadow-lg shadow-[#b9bbb4] md:left-[60%] md:h-50 md:w-50 lg:left-[60%] lg:h-50 lg:w-50"
           >
             <Image
               src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cf161ce47c1_Tile__Woman.webp"
